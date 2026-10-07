@@ -1,13 +1,18 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { clinic, nav, whatsappLink } from "../data/clinic";
 import Icon from "./Icon";
 
 export default function Header({ solid: forceSolid = false }: { solid?: boolean }) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const bar = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
+    const onScroll = () => {
+      setScrolled(window.scrollY > 40);
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      if (bar.current) bar.current.style.transform = `scaleX(${max > 0 ? window.scrollY / max : 0})`;
+    };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
@@ -31,7 +36,7 @@ export default function Header({ solid: forceSolid = false }: { solid?: boolean 
 
         <nav className="hidden items-center gap-5 whitespace-nowrap text-[14px] text-cream/90 xl:flex xl:gap-6 2xl:gap-8">
           {nav.map((i) => (
-            <a key={i.href} href={i.href} className="transition hover:text-white">
+            <a key={i.href} href={i.href} className="nav-link transition hover:text-white">
               {i.label}
             </a>
           ))}
@@ -54,6 +59,12 @@ export default function Header({ solid: forceSolid = false }: { solid?: boolean 
           <Icon name={open ? "x" : "menu"} className="h-7 w-7" />
         </button>
       </div>
+
+      <div
+        ref={bar}
+        className="absolute inset-x-0 bottom-0 h-[2px] origin-left scale-x-0 bg-terra"
+        aria-hidden="true"
+      />
 
       {open && (
         <div className="border-t border-cream/10 bg-forest xl:hidden">

@@ -1,4 +1,48 @@
 import { useEffect } from "react";
+
+function useReveal() {
+  useEffect(() => {
+    if (
+      !("IntersectionObserver" in window) ||
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    )
+      return;
+
+    const targets: HTMLElement[] = [];
+    document
+      .querySelectorAll<HTMLElement>(
+        "main > section:not(:first-child) > .container-x > *, main > article > .container-x > *",
+      )
+      .forEach((el) => {
+        const cls = el.className.toString();
+        const isGrid = /\bgrid\b/.test(cls) && !cls.includes("overflow-x-auto");
+        if (isGrid && el.children.length > 1) {
+          Array.from(el.children).forEach((c, i) => {
+            (c as HTMLElement).style.setProperty("--d", `${Math.min(i, 5) * 90}ms`);
+            targets.push(c as HTMLElement);
+          });
+        } else {
+          targets.push(el);
+        }
+      });
+
+    const io = new IntersectionObserver(
+      (entries) =>
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add("in");
+            io.unobserve(e.target);
+          }
+        }),
+      { threshold: 0.12, rootMargin: "0px 0px -6% 0px" },
+    );
+    targets.forEach((t) => {
+      t.classList.add("reveal");
+      io.observe(t);
+    });
+    return () => io.disconnect();
+  }, []);
+}
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import TrustBar from "./components/TrustBar";
@@ -45,6 +89,7 @@ function Home() {
 }
 
 export default function App() {
+  useReveal();
   const path = window.location.pathname.replace(/\/+$/, "") || "/";
 
   if (path.startsWith("/publicacoes")) {

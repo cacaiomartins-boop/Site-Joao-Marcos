@@ -4,16 +4,18 @@ export default function About() {
   return (
     <section id="sobre" className="bg-sand py-14 md:py-20">
       <div className="container-x grid items-start gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
-        <div className="relative mx-auto w-full max-w-[480px] lg:mx-0">
-          <div className="absolute -left-4 -top-4 h-[88%] w-[92%] rounded-[2rem] bg-sage" />
-          <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem]">
-            <img
-              src={clinic.images.portrait}
-              alt={clinic.name}
-              className="h-full w-full object-cover object-top"
-            />
+        <div className="mx-auto w-full max-w-[480px] lg:mx-0">
+          <div className="relative">
+            <div className="absolute -left-4 -top-4 h-full w-[92%] rounded-[2rem] bg-sage" />
+            <div className="relative aspect-[430/384] overflow-hidden rounded-[2rem]">
+              <img
+                src={clinic.images.portrait}
+                alt={clinic.name}
+                className="h-full w-full object-cover object-top"
+              />
+            </div>
           </div>
-          <div className="absolute -bottom-6 left-5 right-5 rounded-2xl bg-beige/95 p-5 shadow-xl backdrop-blur">
+          <div className="relative z-10 -mt-6 mx-5 rounded-2xl bg-beige p-5 shadow-xl">
             <p className="font-serif text-[1.1rem] text-ink">{clinic.name}</p>
             <p className="text-[12.5px]">{clinic.role}</p>
             <div className="my-3 h-px bg-sand" />
@@ -21,7 +23,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="mt-6 lg:mt-0">
+        <div>
           <p className="eyebrow">{about.eyebrow}</p>
           <h2 className="section-title mt-5">
             Uma trajetória com rigor clínico e <em className="text-rust">sensibilidade</em> humana

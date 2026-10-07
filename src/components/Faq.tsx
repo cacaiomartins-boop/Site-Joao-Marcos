@@ -37,11 +37,17 @@ export default function Faq() {
                   <span className="font-serif text-[1.1rem] text-ink">{f.q}</span>
                   <Icon name={isOpen ? "x" : "plus"} className="h-4 w-4 shrink-0 text-rust" />
                 </button>
-                {isOpen && (
-                  <div className="mx-7 border-t border-sand pb-6 pt-5 text-[15px] leading-relaxed">
-                    {f.a}
+                <div
+                  className={`grid transition-[grid-template-rows] duration-300 ease-out ${
+                    isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+                  }`}
+                >
+                  <div className="overflow-hidden">
+                    <div className="mx-7 border-t border-sand pb-6 pt-5 text-[15px] leading-relaxed">
+                      {f.a}
+                    </div>
                   </div>
-                )}
+                </div>
               </div>
             );
           })}
