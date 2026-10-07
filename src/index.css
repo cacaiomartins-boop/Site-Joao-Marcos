@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+  body {
+    @apply bg-cream font-sans text-body antialiased;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-serif font-normal text-ink;
+    letter-spacing: -0.01em;
+  }
+  h2 em,
+  h1 em {
+    @apply font-light;
+  }
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-[1144px] px-5 md:px-6;
+  }
+  .eyebrow {
+    @apply text-[11px] font-normal uppercase tracking-[0.2em] text-rust;
+  }
+  .section-title {
+    @apply font-serif text-[2rem] leading-[1.1] md:text-[2.6rem];
+  }
+  .btn {
+    @apply inline-flex items-center justify-center rounded-full px-7 py-3.5 text-[15px] font-medium transition hover:-translate-y-0.5;
+  }
+  .btn-light {
+    @apply btn bg-cream text-ink hover:bg-white;
+  }
+  .btn-dark {
+    @apply btn bg-forest text-cream hover:bg-[#2a3a2c];
+  }
+  .btn-outline {
+    @apply btn border border-ink/60 text-ink hover:bg-ink/5;
+  }
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .quote-bar {
+    @apply border-l-2 border-terra pl-5 font-serif text-[15px] italic leading-relaxed text-ink;
+  }
+}
