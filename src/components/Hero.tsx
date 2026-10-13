@@ -39,11 +39,16 @@ export default function Hero() {
             {hero.eyebrow}
           </p>
           <h1 className="animate-fade-up text-[2.6rem] leading-[1.05] text-cream [animation-delay:150ms] md:text-[4rem]">
-            Psicoterapia para <em className="text-sage">compreender</em> e transformar padrões
-            emocionais
+            Cada história, uma <em className="text-sage">relação</em>.
           </h1>
-          <p className="mt-7 max-w-[34rem] animate-fade-up text-[17px] leading-relaxed text-cream/85 [animation-delay:300ms]">
+          <p className="mt-5 animate-fade-up font-serif text-[1.35rem] italic text-sage [animation-delay:250ms] md:text-[1.6rem]">
+            {hero.tagline}
+          </p>
+          <p className="mt-6 max-w-[34rem] animate-fade-up text-[17px] leading-relaxed text-cream/85 [animation-delay:300ms]">
             {hero.subtitle}
+          </p>
+          <p className="mt-4 max-w-[34rem] animate-fade-up text-[15px] font-medium leading-relaxed text-cream [animation-delay:350ms]">
+            {hero.places}
           </p>
           <div className="mt-9 flex animate-fade-up flex-wrap items-center gap-x-8 gap-y-4 [animation-delay:450ms]">
             <a href={whatsappLink()} target="_blank" rel="noreferrer" className="btn-light">

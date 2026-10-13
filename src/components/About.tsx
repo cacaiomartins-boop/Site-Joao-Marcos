@@ -26,7 +26,7 @@ export default function About() {
         <div>
           <p className="eyebrow">{about.eyebrow}</p>
           <h2 className="section-title mt-5">
-            Uma trajetória com rigor clínico e <em className="text-rust">sensibilidade</em> humana
+            Uma trajetória com dedicação à clínica e<em className="text-rust">sensibilidade</em> humana
           </h2>
           <div className="mt-7 space-y-4 text-[15.5px] leading-[1.7] text-ink/90">
             {about.paragraphs.map((p) => (

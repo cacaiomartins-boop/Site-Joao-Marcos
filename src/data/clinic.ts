@@ -68,8 +68,10 @@ export const footerNav = [
 
 export const hero = {
   eyebrow: "Acolhimento · Presencial & Online",
+  tagline: "Uma clínica orientada pela psicanálise",
   subtitle:
-    "Espaço de escuta analítica e conexão humana em Indaiatuba e teleconsulta para todo o Brasil. Um trabalho focado no detalhe de cada história sem fórmulas prontas.",
+    "O sofrimento se manifesta de diferentes formas, mas ganha sentidos particulares na história de cada pessoa. A psicanálise oferece um espaço para que cada pessoa se aproxime de suas questões e possa produzir novos sentidos.",
+  places: "Presencial em Indaiatuba (SP) e online para todo o Brasil.",
   primaryCta: "Marcar primeira sessão",
   secondaryCta: "Conhecer a abordagem",
   card: [
@@ -116,7 +118,7 @@ export const forWhom = {
     },
     {
       title: "Dificuldades nos Relacionamentos",
-      text: "Padrões repetitivos em vínculos afetivos, dependência emocional, medo de rejeição ou conflitos recorrentes na convivência com parceiros e família.",
+      text: "Vivências repetitivas em vínculos afetivos, dependência emocional, medo de rejeição ou conflitos recorrentes na convivência com parceiros e família.",
     },
     {
       title: "Estresse e Sobrecarga Emocional",
@@ -165,7 +167,7 @@ export const approach = {
     {
       numeral: "i.",
       title: "Escuta Analítica e Atenta",
-      text: "Uma atenção suspensa voltada aos detalhes da narrativa, às repetições e aos lapsos, revelando o que opera além da consciência imediata.",
+      text: "Uma atenção suspensa voltada aos detalhes da narrativa, às repetições e aos esquecimentos, revelando o que opera além da consciência imediata.",
     },
     {
       numeral: "ii.",
@@ -179,13 +181,13 @@ export const approach = {
     },
   ],
   change: {
-    eyebrow: "Transformação",
-    title: "O que costuma mudar",
+    eyebrow: "Elaboração",
+    title: "O que pode surgir ao longo do percurso",
     items: [
-      "Compreensão genuína da origem de sintomas e ansiedades.",
-      "Interrupção de ciclos destrutivos nos relacionamentos.",
-      "Ressignificação de cobranças internas e limites pessoais.",
-      "Maior estabilidade e serenidade para lidar com frustrações.",
+      "Investigação das questões que atravessam o sofrimento e suas manifestações.",
+      "Escuta das repetições que se apresentam nos vínculos e nas relações.",
+      "Elaboração das exigências, dos conflitos e das questões que marcam a relação consigo e com os outros.",
+      "Construção de outras possibilidades de se posicionar diante dos impasses da vida.",
     ],
   },
   notThis: {
@@ -236,7 +238,7 @@ export const services = {
       bullets: [
         "Público: Adultos e jovens",
         "Edifício Office Center II, Indaiatuba",
-        "Emissão de recibo para reembolso",
+        "Emissão de nota fiscal para reembolso",
       ],
     },
     {
@@ -248,7 +250,7 @@ export const services = {
       bullets: [
         "Público: Jovens, adultos e idosos",
         "Disponível para todo o território nacional",
-        "Emissão de recibo para reembolso",
+        "Emissão de nota fiscal para reembolso",
       ],
     },
     {
@@ -281,19 +283,19 @@ export const testimonials = {
     {
       date: "21 de abril de 2026",
       text: "João é excepcional, o melhor que já encontrei!! Trabalha com uma mistura de delicadeza, ética e precisão, o que torna atendimento extremamente seguro e eficaz. Cada sessão foi profunda e transformadora, trazendo resultados reais e, ao mesmo tempo, reflexões que permanecem. É o tipo de trabalho que impacta de forma duradoura e estável.",
-      author: "L.O.P",
+      author: "L.O.P.",
       detail: "Edifício Office Center II · Presencial",
     },
     {
       date: "1 de novembro de 2024",
       text: "Excelente profissional! O João é muito atencioso e transmite uma sensação de acolhimento e segurança desde o primeiro encontro. Sempre demonstra empatia e é muito cuidadoso ao conduzir cada sessão, ajudando a entender e a enfrentar questões pessoais de forma prática e respeitosa. Sinto que evoluí muito com seu acompanhamento e recomendo a todos que procuram um psicólogo comprometido com o bem-estar dos pacientes.",
-      author: "Alex Martins Vieira",
+      author: "A.M.V.",
       detail: "Atendimento Online",
     },
     {
       date: "3 de fevereiro de 2024",
       text: "O João Marcos é um profissional ético, humano e faz com excelência aquilo que se propõe! Utiliza dos melhores métodos para auxiliar o seu paciente! Ele é flexível, atento às necessidades e sempre se coloca à disposição para dar suporte em situações pontuais! Ele se tornou a parte mais importante da minha rede de apoio! O melhor terapeuta para a vida!",
-      author: "Adilson Roberto",
+      author: "A.R.",
       detail: "Atendimento Online",
     },
   ],
@@ -303,7 +305,7 @@ export const testimonials = {
 
 export const online = {
   eyebrow: "07 — Em vídeo e teleatendimento",
-  text: "A adaptação ao atendimento virtual demonstrou que a potência da psicanálise independe da distância geográfica. As sessões online preservam rigorosamente o mesmo sigilo profissional, os mesmos parâmetros éticos do CFP e a profundidade de um encontro presencial.",
+  text: "A experiência com o atendimento online demonstra que a psicanálise pode acontecer independentemente da distância geográfica, mantendo o compromisso com o sigilo profissional. Para as sessões virtuais, as condições de privacidade são conversadas e combinadas com cada paciente, buscando construir um espaço favorável à escuta e à confidencialidade.",
   cards: [
     {
       icon: "check",
@@ -320,7 +322,7 @@ export const online = {
     {
       icon: "check",
       title: "Rigor Ético e Respaldo do CFP",
-      text: "Atendimento regulamentado conforme as diretrizes do Conselho Federal de Psicologia e com recibos para reembolso.",
+      text: "Atendimento regulamentado conforme as diretrizes do Conselho Federal de Psicologia e com emissão de nota fiscal para reembolso.",
       tag: "Conselho de Psicologia",
     },
   ],
@@ -335,15 +337,15 @@ export const faq = {
   items: [
     {
       q: "Como funciona a primeira consulta?",
-      a: "A primeira consulta é uma conversa inicial dedicada a acolher o motivo que levou você a buscar ajuda. É o momento de expor suas angústias e entender como o método psicanalítico funciona na prática, estabelecendo o vínculo inicial de confiança e combinando os detalhes práticos de horários.",
+      a: "A primeira consulta geralmente é dedicada a acolher o motivo que levou você a buscar ajuda. É o momento de expor suas angústias e entender como o método psicanalítico acontece, estabelecendo o vínculo inicial de confiança e combinando os detalhes práticos de horários, frequência etc.",
     },
     {
       q: "Qual a frequência e duração das sessões?",
-      a: "As sessões têm duração aproximada de 45 minutos e, em geral, acontecem uma vez por semana. A frequência é combinada em conjunto, de acordo com cada caso e com a constância necessária para a elaboração do processo.",
+      a: "As sessões acontecem, em geral, uma vez por semana, com duração aproximada de 45 minutos, podendo ser mais curtas ou mais longas conforme a condução do trabalho analítico. A frequência e a organização dos encontros são acordadas em conjunto, considerando as particularidades de cada caso.",
     },
     {
       q: "Você aceita plano de saúde ou convênio?",
-      a: "O atendimento é particular. Ao final de cada sessão é emitido um recibo, que pode ser utilizado para solicitar reembolso junto ao seu plano de saúde, conforme as regras do seu convênio.",
+      a: "O atendimento é particular. A emissão da nota fiscal pode ser utilizada para solicitar reembolso do seu plano de saúde, conforme as regras de cada convênio. É importante saber como seu plano de saúde trabalha com o reembolso.",
     },
     {
       q: "Como é resguardado o sigilo profissional?",
@@ -354,12 +356,8 @@ export const faq = {
       a: "Os dois formatos mantêm o mesmo rigor ético e a mesma profundidade de escuta. A escolha depende da sua rotina, da sua localização e do ambiente em que você se sente mais à vontade para falar.",
     },
     {
-      q: "Qual o valor da consulta?",
-      a: "O valor da primeira consulta é de R$ 170, tanto no consultório quanto online, com emissão de recibo para reembolso. Outras informações sobre formato e horários combinamos no primeiro contato.",
-    },
-    {
       q: "Quanto tempo dura um processo psicanalítico?",
-      a: "Não há um prazo fixo. O tempo do processo é singular e depende da história, da demanda e do ritmo de cada pessoa. Por isso não há promessas de cura em número fixo de dias: o trabalho é construído sessão a sessão.",
+      a: "Não há um prazo fixo. O tempo do processo é singular e depende da história, da demanda e do ritmo de cada pessoa. Por isso não há estabelecimento de um número fixo: o trabalho é construído sessão a sessão.",
     },
   ],
 };
