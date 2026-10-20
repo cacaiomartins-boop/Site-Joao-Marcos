@@ -47,9 +47,6 @@ export default function Hero() {
           <p className="mt-6 max-w-[34rem] animate-fade-up text-[17px] leading-relaxed text-cream/85 [animation-delay:300ms]">
             {hero.subtitle}
           </p>
-          <p className="mt-4 max-w-[34rem] animate-fade-up text-[15px] font-medium leading-relaxed text-cream [animation-delay:350ms]">
-            {hero.places}
-          </p>
           <div className="mt-9 flex animate-fade-up flex-wrap items-center gap-x-8 gap-y-4 [animation-delay:450ms]">
             <a href={whatsappLink()} target="_blank" rel="noreferrer" className="btn-light">
               {hero.primaryCta}

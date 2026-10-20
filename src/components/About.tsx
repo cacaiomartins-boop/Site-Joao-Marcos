@@ -15,7 +15,7 @@ export default function About() {
               />
             </div>
           </div>
-          <div className="relative z-10 -mt-6 mx-5 rounded-2xl bg-beige p-5 shadow-xl">
+          <div className="mt-6 rounded-2xl bg-beige p-5 shadow-xl">
             <p className="font-serif text-[1.1rem] text-ink">{clinic.name}</p>
             <p className="text-[12.5px]">{clinic.role}</p>
             <div className="my-3 h-px bg-sand" />

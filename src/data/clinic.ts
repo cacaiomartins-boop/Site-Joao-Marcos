@@ -95,7 +95,6 @@ export const hero = {
 };
 
 export const trustBar = [
-  { icon: "badge", title: "Registro CRP SP", text: "06/162571 Ativo" },
   { icon: "star", title: "Nota 5.0 Estrelas", text: "25 opiniões no Doctoralia" },
   { icon: "pin", title: "Consultório Físico", text: "Cidade Nova I, Indaiatuba" },
   { icon: "monitor", title: "Atendimento Online", text: "Brasil e exterior via vídeo" },
@@ -138,7 +137,7 @@ export const forWhom = {
 export const about = {
   eyebrow: "02 — Sobre mim",
   paragraphs: [
-    "Sou psicólogo clínico e Psicanalista, graduado pela Universidade Federal de Goiás (UFG) e pós-graduado em psicanálise e sintomas contemporâneos pela PUC. Atendo adultos em clínica presencial em Indaiatuba e no ambiente online para todo o Brasil e brasileiros no exterior. Meu ofício é a conexão e o encontro humano.",
+    "Atendo adultos em clínica presencial em Indaiatuba e no ambiente online para todo o Brasil e brasileiros no exterior. Meu ofício é a conexão e o encontro humano.",
     "Aprimoro desde 2014 minha atuação com a psicanálise, abordagem na qual acredito por valorizar os detalhes de cada história humana. Fazemos do encontro um a um transformações de dentro para fora através da escuta e da fala, proporcionando melhorias com a vida vivida, sem imposição de manuais ou receitas de conduta.",
     "Oferecer suporte e contribuir para a construção de uma vida mais satisfatória me envolve e me cativa. Se você sentir o desejo de iniciar um percurso psicanalítico, meu papel será te ajudar a sustentar essa investigação com ética e cuidado.",
   ],
@@ -147,10 +146,10 @@ export const about = {
   badgesTitle: "Formação & Especializações",
   badges: [
     "Pós-Graduação Clínica Psicanalítica (PUC)",
-    "Graduação em Psicologia (UFG)",
     "Psicanálise Lacaniana (Unicamp)",
     "Psicanálise, Gênero e Sexualidade (USP)",
     "Estudos Psicanalíticos (ACP Campinas)",
+    "Graduação em Psicologia (UFG)",
   ],
   cardNote: "Pós-graduado em Psicanálise e Sintomas Contemporâneos · PUC",
   cta: "Agendar uma conversa",
