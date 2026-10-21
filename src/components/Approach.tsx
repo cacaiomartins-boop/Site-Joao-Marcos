@@ -20,6 +20,9 @@ export default function Approach() {
             <img
               src={clinic.images.office}
               alt="Consultório em Indaiatuba"
+              width={439}
+              height={549}
+              loading="lazy"
               className="aspect-[4/3] w-full rounded-3xl object-cover"
             />
             <figcaption className="mt-3 text-right text-[11px] tracking-wide text-ink">

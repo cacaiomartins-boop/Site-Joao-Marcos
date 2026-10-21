@@ -11,6 +11,9 @@ export default function About() {
               <img
                 src={clinic.images.portrait}
                 alt={clinic.name}
+                width={860}
+                height={768}
+                loading="lazy"
                 className="h-full w-full object-cover object-top"
               />
             </div>

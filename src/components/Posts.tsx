@@ -1,7 +1,7 @@
 import { clinic, whatsappLink } from "../data/clinic";
 import { postDate, visiblePosts, type Post } from "../data/posts";
 
-function PostCard({ p, wide = false }: { p: Post; wide?: boolean }) {
+function PostCard({ p, wide = false, as: Heading = "h3" }: { p: Post; wide?: boolean; as?: "h2" | "h3" }) {
   const meta = (
     <div className="flex flex-wrap items-center gap-3 text-[12px]">
       {p.source && (
@@ -31,9 +31,9 @@ function PostCard({ p, wide = false }: { p: Post; wide?: boolean }) {
     >
       <div>
         {meta}
-        <h3 className={`mt-5 font-serif leading-snug text-ink ${wide ? "text-[1.8rem] md:text-[2.3rem]" : "text-[1.4rem]"}`}>
+        <Heading className={`mt-5 font-serif leading-snug text-ink ${wide ? "text-[1.8rem] md:text-[2.3rem]" : "text-[1.4rem]"}`}>
           {p.title}
-        </h3>
+        </Heading>
       </div>
       <div className={wide ? "mt-4 lg:mt-0" : "mt-3 flex flex-1 flex-col"}>
         <p className={`leading-relaxed ${wide ? "text-[16px]" : "text-[14.5px]"}`}>{p.excerpt}</p>
@@ -64,7 +64,7 @@ export function PostsPage() {
         ) : (
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {list.map((p, i) => (
-              <PostCard key={p.slug} p={p} wide={list.length === 1 || (list.length % 3 === 1 && i === 0)} />
+              <PostCard key={p.slug} p={p} as="h2" wide={list.length === 1 || (list.length % 3 === 1 && i === 0)} />
             ))}
           </div>
         )}

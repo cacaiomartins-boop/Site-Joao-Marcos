@@ -58,6 +58,7 @@ import Location from "./components/Location";
 import Emergency from "./components/Emergency";
 import Footer from "./components/Footer";
 import { PostPage, PostsPage, PostsTeaser } from "./components/Posts";
+import { useSeo } from "./seo";
 
 function Home() {
   useEffect(() => {
@@ -91,6 +92,7 @@ function Home() {
 export default function App() {
   useReveal();
   const path = window.location.pathname.replace(/\/+$/, "") || "/";
+  useSeo(path);
 
   if (path.startsWith("/publicacoes")) {
     const slug = path.split("/")[2];

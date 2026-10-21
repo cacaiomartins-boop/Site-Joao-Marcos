@@ -28,6 +28,9 @@ export default function Hero() {
         <img
           src={clinic.images.hero}
           alt=""
+          width={439}
+          height={549}
+          {...{ fetchpriority: "high" }}
           className="h-full w-full animate-kenburns object-cover object-right opacity-60"
         />
       </div>

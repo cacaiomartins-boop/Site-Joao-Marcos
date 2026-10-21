@@ -35,9 +35,9 @@ export const clinic = {
   },
 
   images: {
-    hero: "/img/consultorio.jpg",
-    portrait: "/img/joao-marcos.jpg",
-    office: "/img/consultorio.jpg",
+    hero: "/img/consultorio.webp",
+    portrait: "/img/joao-marcos.webp",
+    office: "/img/consultorio.webp",
   },
 };
 
