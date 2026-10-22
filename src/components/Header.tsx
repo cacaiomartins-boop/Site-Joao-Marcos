@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { clinic, nav, whatsappLink } from "../data/clinic";
+import { clinic, nav } from "../data/clinic";
 import Icon from "./Icon";
 
 export default function Header({ solid: forceSolid = false }: { solid?: boolean }) {
@@ -43,7 +43,7 @@ export default function Header({ solid: forceSolid = false }: { solid?: boolean 
         </nav>
 
         <a
-          href={whatsappLink()}
+          href={clinic.doctoraliaUrl}
           target="_blank"
           rel="noreferrer"
           className="btn-light ml-auto hidden shrink-0 whitespace-nowrap !px-6 !py-3 !text-[14px] lg:inline-flex xl:ml-0"
@@ -80,7 +80,7 @@ export default function Header({ solid: forceSolid = false }: { solid?: boolean 
               </a>
             ))}
             <a
-              href={whatsappLink()}
+              href={clinic.doctoraliaUrl}
               target="_blank"
               rel="noreferrer"
               className="btn-light mt-4"

@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { clinic, hero, whatsappLink } from "../data/clinic";
+import { clinic, hero } from "../data/clinic";
 import Icon from "./Icon";
 
 export default function Hero() {
@@ -51,7 +51,7 @@ export default function Hero() {
             {hero.subtitle}
           </p>
           <div className="mt-9 flex animate-fade-up flex-wrap items-center gap-x-8 gap-y-4 [animation-delay:450ms]">
-            <a href={whatsappLink()} target="_blank" rel="noreferrer" className="btn-light">
+            <a href={clinic.doctoraliaUrl} target="_blank" rel="noreferrer" className="btn-light">
               {hero.primaryCta}
             </a>
             <a href="#abordagem" className="inline-flex items-center gap-2 text-[15px] text-cream">

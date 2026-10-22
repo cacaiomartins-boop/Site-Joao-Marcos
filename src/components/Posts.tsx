@@ -1,4 +1,4 @@
-import { clinic, whatsappLink } from "../data/clinic";
+import { clinic } from "../data/clinic";
 import { postDate, visiblePosts, type Post } from "../data/posts";
 
 function PostCard({ p, wide = false, as: Heading = "h3" }: { p: Post; wide?: boolean; as?: "h2" | "h3" }) {
@@ -104,7 +104,7 @@ export function PostPage({ slug }: { slug: string }) {
         </div>
         <div className="mt-14 rounded-3xl bg-beige p-8">
           <p className="font-serif text-[1.3rem] text-ink">Quer conversar sobre isso?</p>
-          <a href={whatsappLink()} target="_blank" rel="noreferrer" className="btn-dark mt-5">
+          <a href={clinic.doctoraliaUrl} target="_blank" rel="noreferrer" className="btn-dark mt-5">
             Agendar uma conversa
           </a>
         </div>

@@ -1,4 +1,4 @@
-import { clinic, location, whatsappLink } from "../data/clinic";
+import { clinic, location } from "../data/clinic";
 import Icon from "./Icon";
 
 export default function Location() {
@@ -14,7 +14,7 @@ export default function Location() {
           <p className="mt-7 max-w-[32rem] text-[16px] leading-relaxed text-cream/85">
             {location.text}
           </p>
-          <a href={whatsappLink()} target="_blank" rel="noreferrer" className="btn-light mt-8">
+          <a href={clinic.doctoraliaUrl} target="_blank" rel="noreferrer" className="btn-light mt-8">
             {location.cta}
           </a>
 

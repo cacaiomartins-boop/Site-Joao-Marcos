@@ -1,4 +1,4 @@
-import { about, clinic, whatsappLink } from "../data/clinic";
+import { about, clinic } from "../data/clinic";
 
 export default function About() {
   return (
@@ -53,7 +53,7 @@ export default function About() {
             ))}
           </div>
 
-          <a href={whatsappLink()} target="_blank" rel="noreferrer" className="btn-dark mt-9">
+          <a href={clinic.doctoraliaUrl} target="_blank" rel="noreferrer" className="btn-dark mt-9">
             {about.cta}
           </a>
         </div>

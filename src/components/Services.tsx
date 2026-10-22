@@ -1,4 +1,4 @@
-import { services, whatsappLink } from "../data/clinic";
+import { clinic, services } from "../data/clinic";
 import Icon from "./Icon";
 
 export default function Services() {
@@ -36,7 +36,7 @@ export default function Services() {
               </ul>
               <div className="mt-auto pt-8">
                 <a
-                  href={whatsappLink(`Olá! Gostaria de agendar: ${s.title}.`)}
+                  href={clinic.doctoraliaUrl}
                   target="_blank"
                   rel="noreferrer"
                   className="btn-dark w-full"
