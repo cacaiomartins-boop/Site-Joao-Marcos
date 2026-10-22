@@ -20,8 +20,8 @@ export default function Approach() {
             <img
               src={clinic.images.office}
               alt="Consultório em Indaiatuba"
-              width={439}
-              height={549}
+              width={1600}
+              height={900}
               loading="lazy"
               className="aspect-[4/3] w-full rounded-3xl object-cover"
             />

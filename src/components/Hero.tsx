@@ -28,10 +28,10 @@ export default function Hero() {
         <img
           src={clinic.images.hero}
           alt=""
-          width={439}
-          height={549}
+          width={1600}
+          height={900}
           {...{ fetchpriority: "high" }}
-          className="h-full w-full animate-kenburns object-cover object-right opacity-60"
+          className="h-full w-full animate-kenburns object-cover object-[35%_center] opacity-60"
         />
       </div>
       <div className="absolute inset-0 bg-gradient-to-r from-forest via-forest/85 to-forest/40" />
